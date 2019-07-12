@@ -181,7 +181,7 @@ class BusMonitor(Monitor):
         self.clock = clock
         self.bus = Bus(self.entity, self.name, self._signals,
                        optional_signals=self._optional_signals,
-                       bus_separator=bus_separator,array_idx=array_idx)
+                       bus_separator=bus_separator, array_idx=array_idx)
         self._reset = reset
         self._reset_n = reset_n
         Monitor.__init__(self, callback=callback, event=event)
